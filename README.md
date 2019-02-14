@@ -11,8 +11,18 @@ docker run \
   -d \
   -p 1234:1234 \
   -p 2055:2055/udp \
-  -p 3000:3000 ntop -m [localnetwork]
+  -p 3000:3000 ntop -m [localnetwork(s)]
   ```
+
+## Docker Hub:
+```bash
+docker run \
+  --name ntop \
+  -d \
+  -p 1234:1234 \
+  -p 2055:2055/udp \
+  -p 3000:3000 johanels/ntopmikrotik -m [localnetwork(s)]
+```
 
 ## RouterOS:
 ```ros
